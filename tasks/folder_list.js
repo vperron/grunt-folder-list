@@ -1,15 +1,17 @@
 /*
- * grunt-folder-list
- * https://github.com/roughcoder/grunt-folder-list
+ * grunt-folder-list-front-matter
+ * https://github.com/vperron/grunt-folder-list
  *
  * Copyright (c) 2014 Neil Barton
+ * Copyright (c) 2014 Victor Perron
  * Licensed under the MIT license.
  */
 
 'use strict';
 var fs = require("fs"); //Load the filesystem module
 var path = require("path"); // Path tools
-var to = require("to") // JSON, YML convert
+var to = require("to"); // JSON, YML convert
+var fm = require('front-matter'); // Read front matter
 
 module.exports = function (grunt) {
 
@@ -56,6 +58,13 @@ module.exports = function (grunt) {
                 return ext[ext.length - 1];
             }
 
+            // Function to read an eventual header in the file
+            function readHeader(filename) {
+                var content = grunt.file.read(filename);
+                var front = fm(content);
+                return front.attributes;
+            }
+
 
             // Output variables
             var structure = [],
@@ -88,7 +97,8 @@ module.exports = function (grunt) {
                         type: 'file',
                         size: getFilesizeInBytes(cwd + filename),
                         depth: filename.split('/').length - 1,
-                        filetype: getExtension(cwd + filename)
+                        filetype: getExtension(cwd + filename),
+                        header: readHeader(cwd + filename)
                     }
                     if (options.files) {
                         structure.push(tempInfo);

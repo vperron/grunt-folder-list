@@ -10,6 +10,7 @@
   size: 0
   depth: 1
   filetype: js
+  header: 
 - location: assetdesign
   type: dir
   depth: 1
@@ -19,12 +20,19 @@
   size: 0
   depth: 1
   filetype: js
+  header: 
 - location: "assetdesign/index.html"
   filename: "index.html"
   type: file
-  size: 0
+  size: 0.000132
   depth: 1
   filetype: html
+  header: 
+    layout: post
+    title: indexTitle
+    date: "2010-04-14T12:41:56.000Z"
+    author: "John Doe"
+    categories: "a tag and another"
 - location: assetstyle
   type: dir
   depth: 1
@@ -37,15 +45,18 @@
   size: 0
   depth: 2
   filetype: js
+  header: 
 - location: "assetstyle/folderb/index2.html"
   filename: "index2.html"
   type: file
   size: 0
   depth: 2
   filetype: html
+  header: 
 - location: "assetstyle/index.html"
   filename: "index.html"
   type: file
   size: 0
   depth: 1
   filetype: html
+  header: 

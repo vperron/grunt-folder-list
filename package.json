@@ -2,22 +2,22 @@
     "name": "grunt-folder-list",
     "description": "Returns the file, folder or both structure from a given source in JSON or YML",
     "version": "1.1.0",
-    "homepage": "https://github.com/roughcoder/grunt-folder-list",
+    "homepage": "https://github.com/vperron/grunt-folder-list",
     "author": {
         "name": "Neil Barton",
-        "email": "neil@roughcoder.com"
+        "email": "neil@vperron.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/roughcoder/grunt-folder-list.git"
+        "url": "git://github.com/vperron/grunt-folder-list.git"
     },
     "bugs": {
-        "url": "https://github.com/roughcoder/grunt-folder-list/issues"
+        "url": "https://github.com/vperron/grunt-folder-list/issues"
     },
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/roughcoder/grunt-folder-list/blob/master/LICENSE-MIT"
+            "url": "https://github.com/vperron/grunt-folder-list/blob/master/LICENSE-MIT"
         }
     ],
     "engines": {
@@ -27,6 +27,7 @@
         "test": "grunt test"
     },
     "devDependencies": {
+        "front-matter": "~0.2",
         "grunt-contrib-jshint": "~0.6.0",
         "grunt-contrib-clean": "~0.4.0",
         "grunt-contrib-nodeunit": "~0.2.0",
