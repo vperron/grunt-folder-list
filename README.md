@@ -1,6 +1,10 @@
-# grunt-folder-list
+# grunt-folder-list-front-matter
 
 > Returns the file, folder or both structure from a given source in JSON or YML.  Includes depth, file size and file type.
+
+Base on Neil Barton's great [grunt-folder-list](https://github.com/roughcoder/grunt-folder-list)
+
+I just added the front matter info to the generated file list.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.2`

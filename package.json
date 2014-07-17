@@ -1,11 +1,11 @@
 {
-    "name": "grunt-folder-list",
-    "description": "Returns the file, folder or both structure from a given source in JSON or YML",
-    "version": "1.1.0",
+    "name": "grunt-folder-list-front-matter",
+    "description": "Returns the file, folder and front matter from a given source in JSON or YML",
+    "version": "1.2.0",
     "homepage": "https://github.com/vperron/grunt-folder-list",
     "author": {
-        "name": "Neil Barton",
-        "email": "neil@vperron.com"
+        "name": "Victor Perron",
+        "email": "victor@iso3103.net"
     },
     "repository": {
         "type": "git",
